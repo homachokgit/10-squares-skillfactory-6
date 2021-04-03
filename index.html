@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="icon" href="icon/timer.svg">
+    <title>10 квадратов</title>
+  </head>
+  <body>
+    <br>
+    <div id="headFlex">
+      <div id="headPart1">
+        <p id="title">10 квадратов</p>
+      </div>
+      <div id="headPart2">
+        <button type="button" class="btn" data-toggle="modal" data-target=".modal" id="btnModalActive">
+          <p>?</p>
+        </button>
+          <div class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+                <p id="pModal">Доброго времени суток тому кто  это читает. Цель моей мини игры тренировка реакции, вам нужно за максимально короткое время собрать 10 зелёных квадратов. Для того чтобы начать/перезапустить игру нажмите на кнопку "Играть заново". В правом нижнем углу вы можете видеть два датчика, первый показывает время которое прошло с момента начала, а второй это количество ошибок (промахов) совершёных вами.</p>
+                <h3 id="h3Modal">Для проверяющего</h3>
+                <p id="pModal">Пожалуйста не бейте меня за костыли. предложененный код я вообще не понял и решил написать свой, но как вы уже поняли получилось не очень)</p>
+              </div>
+            </div>
+          </div>        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col game-field mistake align-text-bottom" id="slot-1"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-2"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-3"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-4"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-5"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-6"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field mistake align-text-bottom" id="slot-7"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-8"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-9"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-10"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-11"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-12"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field mistake align-text-bottom" id="slot-13"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-14"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-15"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-16"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-17"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-18"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field mistake align-text-bottom" id="slot-19"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-20"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-21"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-22"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-23"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-24"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field mistake align-text-bottom" id="slot-25"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-26"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-27"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-28"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-29"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-30"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field mistake align-text-bottom" id="slot-31"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-32"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-33"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-34"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-35"></div>
+        <div class="col game-field mistake align-text-bottom" id="slot-36"></div>
+      </div>
+      <div id="footerInfo">
+        <div id="upFooter">
+          <button id="btnReset">Играть заново</button>
+          <ul id="statContainer">
+            <li id="secondStat"><div id="descriptionSek">Время</div><p class="sek" id="sekMean">0</p></li>
+            <li id="mistakeStat"><div id="descriptionMistake">ошибки</div><p id="mistakeMean">0</p></li>
+          </ul>
+        </div>
+        <div id="downFooter">
+        <p id="print"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/game.js"></script>
+  </body>
+</html>

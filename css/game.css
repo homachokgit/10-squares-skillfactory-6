@@ -1,0 +1,130 @@
+@font-face{
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-family: "openSans";
+}
+@font-face{
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-family: "openSansBold";
+}
+.game-field {
+  background-color: orange;
+  min-height: 10vh;
+  margin: 1px 1px 1px 1px;
+  line-height: 10vh;
+}
+#print{
+  font-size: 20px;
+}
+.target {
+  background-color: green;
+  color: white;
+  font-size: 24pt;
+  text-align: center;
+}
+.miss {
+  background-color: red;
+}
+#upFooter{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+#mistakeStat{
+  border: 1px blue solid;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: calc(50% - 25px);
+}
+#secondStat{
+  border: 1px blue solid;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: calc(50% - 25px);
+}
+#sekMean, #mistakeMean{
+  font-family: "openSans";
+  position: absolute;
+  font-family: "openSans";
+}
+#descriptionSek, #descriptionMistake{
+  display: none;
+  border: 0.5px black solid;
+  border-radius: 4px;
+  position: relative;
+  bottom: 25px;
+}
+#secondStat:hover #descriptionSek{
+  display: inline;
+}
+#mistakeStat:hover #descriptionMistake{
+  display: inline;
+}
+#statContainer{
+  display: flex;
+}
+#btnReset{
+  max-height: 50px;
+  margin-top: 25px;
+}
+#title{
+  background-color: orange;
+  font-family: "openSansBold";
+  font-size: 40px;
+  padding: 10px 20px;
+  width: 320px;
+  border-radius: 10px;
+}
+#btnReset{
+  border-color: #f1c40f;
+  font-family: "openSans";
+  background-color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+#btnReset:hover{
+  background-position: 0;
+}
+#btnModalActive{
+  border-color: #f1c40f;
+  border-radius: 2px;
+  height: 35px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+#btnModalActive:hover{
+  background-position: 0;  
+}
+#headFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(70vw + 5px);
+  margin: auto;
+}
+#pModal{
+  font-family: "openSans";
+}
+#h3Modal{
+  font-family: "openSansBold";
+  border-top: 2px black solid;
+}
